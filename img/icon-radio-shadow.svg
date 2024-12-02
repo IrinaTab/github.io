@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="7.300781" height="7.067749" viewBox="0 0 7.30078 7.06775" fill="none" xmlns="http://www.w3.org/2000/svg" style="filter: url(&quot;#drop-shadow-filter-0&quot;);" xmlns:bx="https://boxy-svg.com">
+  <desc>
+			Created with Pixso.
+	</desc>
+  <defs>
+    <filter id="drop-shadow-filter-0" bx:preset="drop-shadow 1 0 0 1 1.23 #fff" color-interpolation-filters="sRGB" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="1"/>
+      <feOffset dx="0" dy="0"/>
+      <feComponentTransfer result="offsetblur">
+        <feFuncA id="spread-ctrl" type="linear" slope="2.46"/>
+      </feComponentTransfer>
+      <feFlood flood-color="#fff"/>
+      <feComposite in2="offsetblur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <path id="Vector 1" d="M0.35 2.72L3.85 6.22L6.85 0.22" stroke="#000000" stroke-opacity="1.000000" stroke-width="1.000000"/>
+</svg>

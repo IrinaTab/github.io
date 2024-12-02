@@ -1,0 +1,274 @@
+.top-cart {
+    height: 400px;
+    background-image: url(img/topcart.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.heading-big {
+    color: $second-color-text;
+    font-size: 64px;
+    font-weight: $middle-fontweight + 100;
+    line-height: 70px;
+    // margin-top: 127px;
+}
+.heading-small {
+    font-size: 16px;
+    font-weight: $middle-fontweight;
+    color: $primary-color-text;
+    font-size: 24px;
+    line-height: 29px;
+}
+.position-modal-window {
+    display: flex;
+    justify-content: flex-end;
+}
+.cart {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+    margin-top: 64px;
+    &__modal-window {
+        position: absolute;
+        width: 573px;
+        background: rgb(255, 255, 255);
+        box-shadow: 0px 4px 67px -12px rgba(0, 0, 0, 0.32);
+        top: 1%;
+    }
+    &__content {
+        grid-column: span 8;
+    }
+    &__content-modal-window {
+        grid-column: span 12;
+        padding: 40px 48px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    &__name-box {
+        color: $primary-color-text;
+        font-size: 16px;
+        font-weight: $middle-fontweight - 100;
+        line-height: 20px;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 14px;
+    }
+    &__cart__price {
+        color: rgb(5, 5, 5);
+        font-size: 16px;
+        font-weight: $middle-fontweight;
+        line-height: 20px;
+    }
+    &__link-box {
+        display: flex;
+        gap: 30px;
+    }
+    &__link-box-min {
+        margin-top: 42px;
+    }
+    &__link {
+        color: $primary-color-text;
+        font-size: 14px;
+        font-weight: $middle-fontweight - 100;
+        line-height: 210%;
+        letter-spacing: 0px;
+        text-decoration-line: underline;
+        &:hover {
+            text-decoration-line: underline;
+            transform: scale(1.1);
+            font-weight: bold;
+        }
+    }
+    &__item {
+        padding-top: 25px;
+        padding-bottom: 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        border-top: 0.5px solid rgb(202, 205, 216);
+        padding-top: 24px;
+    }
+    &__item-min {
+        padding-top: 5px;
+        padding-bottom: 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-top: 24px;
+    }
+    &__item-min:nth-child(2n) {
+        border-top: 0.5px solid rgb(202, 205, 216);
+    }
+    &__left {
+        display: flex;
+        gap: 32px;
+    }
+    &__img-min {
+        width: 144px;
+        height: 144px
+    }
+    &__info {
+        width: 276px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+    &__info-min {
+        gap: 12px;
+        width: 100%;
+    }
+    &__text {
+        color: rgb(136, 136, 136);
+        font-size: 14px;
+        font-weight: $middle-fontweight - 100;
+        line-height: 17px;
+    }
+    &__input {
+        width: 71px;
+        height: 51px;
+        color: $primary-color-text;
+        font-family: inherit;
+        font-size: 14px;
+        font-weight: $middle-fontweight + 100;
+        line-height: 210%;
+        text-align: center;
+        display: flex;
+        align-self: flex-start;
+        outline: none;
+        border-radius: 6px;
+        border: none;
+        background: rgb(247, 246, 246);
+        &:focus {
+            border: 2px solid lightgray;
+            box-shadow: 5px 5px 15px grey;
+        }
+    }
+    &__form {
+        border-radius: 20px;
+        background: rgb(247, 246, 246);
+        height: 556px;
+        grid-column: span 4;
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        &-min {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    &__form-title {
+        color: $primary-color-text;
+        font-size: 24px;
+        font-weight: $middle-fontweight + 200;
+        line-height: 29px;
+        text-align: center;
+        padding-top: 42px;
+    }
+    &__input-box {
+        display: flex;
+        flex-direction: column;
+        padding-left: 27px;
+        padding-right: 64px;
+        gap: 60px;
+    }
+    &__input-name {
+        outline: none;
+        font: inherit;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid rgb(202, 205, 216);
+        &:focus {
+            border-bottom: 3px solid rgb(180, 185, 170);
+        }
+    }
+    &__input-number {
+        outline: none;
+        font: inherit;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid rgb(202, 205, 216);
+        &:focus {
+            border-bottom: 3px solid rgb(180, 185, 170);
+        }
+    }
+    &__btn-link-box {
+        padding-top: 18px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    &__btn {
+        width: 200px;
+        height: 37px;
+        left: 328px;
+        top: 983px;
+        box-sizing: border-box;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 50px;
+        color: $primary-color-text;
+        font: inherit;
+        font-size: 14px;
+        font-weight: $middle-fontweight - 100;
+        line-height: 17px;
+        text-align: center;
+        background-color: #fff;
+        &:hover {
+            font-weight: bolder;
+            box-shadow: -5px -5px 15px gray;
+        }
+    }
+    &__form-price {
+        color: $primary-color-text;
+        font-size: 24px;
+        font-weight: $middle-fontweight;
+        line-height: 29px;
+        text-align: center;
+        &-min {
+            letter-spacing: -3%;
+        }
+    }
+    &__form-price::before{
+        content: 'Итого: ';
+        font-weight: $middle-fontweight - 100;
+    }
+    &__form-btn-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+    }
+    &__form-btn {
+        width: 290px;
+        height: 41px;
+        box-sizing: border-box;
+        border: 1px solid rgb(4, 4, 4);
+        border-radius: 20px;
+        background-color:  rgb(247, 246, 246);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $primary-color-text;
+        font: inherit;
+        font-size: 16px;
+        font-weight: $middle-fontweight - 100;
+        line-height: 20px;
+        text-align: center;
+        background-image: linear-gradient(to right, #f7cfe7, hsl(315, 61%, 52%));
+        background-repeat: no-repeat; /* Фон не повторяется */
+        background-size: 0 100%; /* Градиент пока не показываем */
+        transition: 0.5s;
+        &:hover {
+            font-weight: bolder;
+            color: rgb(32, 32, 32);
+            box-shadow: -5px -5px 15px gray;
+            transform: scale(1.05);
+            background-size: 100% 100%; /* Отображаем градиент */
+        }
+    
+        &-min {
+            width: 207px;
+        }
+    }
+}

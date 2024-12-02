@@ -1,0 +1,86 @@
+
+@media (max-width: 1024px) {
+    /* Планшетная версия Главная START */
+    .center {
+        padding-left: calc(50% - 786px/2);
+        padding-right: calc(50% - 786px/2);
+    }
+    .header {
+        &__logo-img {
+            width: 198px;
+            height: 44px;
+        }
+    }
+    .main-content {
+        margin: 0;
+        padding: 0;
+        &__title {
+            margin-top: 15vh;
+            padding: 0;
+        }
+    }
+    .for {
+        gap: 30px;
+        &__item {
+            max-height: 265px;
+        }
+        &__item-big {
+            max-height: 268px;
+        }
+    }
+    .spofers-box {
+        gap: 29px;
+    }
+    .products__catalog {
+        margin-top: 64px - 20px;/* минус gap */
+    }
+    .catalog-box {
+        row-gap: 39px;
+        column-gap: 29px;
+        justify-content: center;
+    }
+    .footer__logo {
+        display: none;
+    }
+/* Планшетная версия Главная END */
+
+/* Планшетная версия Каталог START */
+    .box-leftside {
+        justify-content: flex-start;
+        margin-left: calc(50% - 39vw / 2);
+    }
+
+/* Планшетная версия Каталог END */
+
+/* Планшетная версия Корзина START */
+.cart {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-top: 64px;
+    }
+.cart__btn-сontinue  {
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+.cart__form {
+    max-width: 376px;
+    max-height: 556px;
+    margin-top: 32px;
+}
+/* Планшетная версия Корзина END */
+}
+@media (min-width: 768px) and (max-width: 785px) {
+    .center {
+        padding-left: calc(50% - 754px/2);
+        padding-right: calc(50% - 754px/2);
+    }
+    .card {
+        &__img {
+            width: 320px;
+            height: 226px;
+        }
+    }
+}
+
